@@ -1,0 +1,78 @@
+@media (max-width: 450px) {
+  
+  h1, .container5 h1, .container3 h1 {
+      font-size: 1.5rem;
+  }
+
+  .container2 h2, .section1 h5, .container4 h1 {
+      font-size: 1.2rem;
+  }
+
+
+  .header {
+      display: block;
+      padding: 10px;
+  }
+
+  .menu img {
+      width: 150px;
+      margin-bottom: 10px;
+  }
+
+  .menu a {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      margin: 5px 0;
+  }
+
+
+  .main {
+      padding: 5rem 1rem;
+  }
+
+  .main h1 {
+      font-size: 1.5rem;
+  }
+
+
+  .card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+
+  .card2 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+
+  .section1 {
+      padding: 10px;
+  }
+
+
+  .section2 iframe {
+      width: 100%;
+      max-width: 100%;
+  }
+
+
+  .container5_cards {
+      flex-direction: column;
+  }
+
+  .content_5 img {
+      width: 300px;
+  }
+
+  .container4_content {
+      height: auto;
+      padding: 20px;
+  }
+
+  .container4_content h2 {
+      font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Estilos del header */
+.header {
+  background-color: #6c9bcf; /* Azul suave */
+  padding: 10px 20px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px; /* Tamaño de la fuente */
+  color: white;
+}
+
+/* Estilos del icono de menú de hamburguesa */
+.menuIcon {
+  display: none; /* Oculto por defecto */
+}
+
+/* Hacer visible el ícono en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Ocultar las opciones de menú en pantallas pequeñas por defecto */
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  /* Mostrar las opciones cuando se haga clic en el menú */
+  nav.active ul {
+    display: flex;
+  }
+}

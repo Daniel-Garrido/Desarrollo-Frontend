@@ -1,0 +1,141 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f5b208; /* Amarillo fuerte */
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.menu {
+  background-color: #B0B0B0; /* Gris */
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu h2 {
+  margin: 0;
+}
+
+.main {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.contenedor{
+  width: 80%;
+  
+  display: flex;
+  justify-content: left;
+  flex-direction:  row;
+  border: 2px solid rgb(12, 12, 36);
+  padding: 30px 80px;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+  overflow: visible; /* Para permitir que los elementos salgan del card */
+}
+
+.card i {
+  position: absolute;
+  top: -25px; /* Mueve el icono hacia arriba */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrar exactamente */
+  background-color: white; /* Fondo blanco para hacer el icono más visible */
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.card h1 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: left;
+  line-height: 25px;
+}
+
+ .btn {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card .btn:hover {
+  background-color: #333;
+}
+
+.footer {
+
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #855555;
+}
+
+/* Flexbox para las cards */
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 770px) {
+
+  .contenedor{
+    flex-direction:  column;
+  }
+  .card{
+    margin-bottom: 30px;
+  }
+}

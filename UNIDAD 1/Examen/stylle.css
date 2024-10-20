@@ -1,0 +1,399 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color-primario: #da5f33;
+  --color-secundario: #3ba9ba;
+  --color-fondo: #676769;
+  --color_fondo-2: #e3e3e3;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*************** Estilos para el header ********************/
+.header {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+ 
+}
+h1{
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+p{
+  font-size: 1rem;
+ 
+  text-align: center;
+}
+
+.menu {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para el logo */
+.menu img {
+  width: 200px;
+
+}
+
+/* Estilos para los enlaces */
+.menu a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--color-fondo);
+  padding: 10px 10px;
+  border-radius: 1px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+
+/***************************Estilo al Main ***********************************/
+.main {
+
+  color: white;
+  background-image: url('imagenes/fotoprincipal.jpg'); 
+  background-size: cover;
+  background-position: center;
+  
+  padding: 10rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+.main h1 {
+  font-size: 2.5rem; 
+  line-height: 1.2;
+  max-width: 800px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+/**************************+ Contenedor 1 *****************************/
+.container1 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color_fondo-2);
+}
+
+/* Estilo para el título */
+.container1 h4 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #333;
+  padding-top: 40px;
+  margin-bottom: 20px ;
+}
+
+/* Estilo para las tarjetas */
+.card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+ 
+}
+
+/* Estilo para las imágenes */
+.card img {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+/* Estilo para los íconos */
+.card i {
+  position: absolute;
+  top: 205px;
+  background-color: var(--color-secundario);
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo para el nombre */
+.card h3 {
+  color: var(--color-primario);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para la descripción */
+.card p {
+  color: var(--color-fondo);
+  font-size: 0.9rem;
+  text-align: left;
+
+}
+
+
+/******************************** Contenedor 2 ***************************/
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+/* Estilo para el título */
+.container2 h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.container2 p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de las tarjetas */
+.container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilo para cada tarjeta */
+.card2 {
+  width: 22%;
+  background-color: white;
+  border: 2px solid var(--color-secundario);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+/* Estilo para los íconos */
+.card2 i {
+  font-size: 40px;
+  padding: 25px;
+  color: var(--color-fondo);
+  background-color: var(--color_fondo-2);
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card2 h3 {
+  color: var(--color-primario);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card2 p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/*************************************** contenedor 3****************************+ */
+.container3 {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+/* Estilo para el título */
+.container3 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--color-fondo);
+}
+
+/* Estilo para el contenedor interno */
+.contenedor {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Estilos para la sección izquierda (texto) */
+.section1 {
+  background-color: var(--color-primario);
+  color: white;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section1 h5 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.section1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #ff5722;
+}
+
+/* Estilos para la sección derecha (video) */
+.section2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 iframe {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/******************************* Contenedor 4 *****************************************/
+.container4 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo para el título principal */
+.container4 h1 {
+  font-size: 2rem;
+  color: var(--color-fondo);
+  margin-bottom: 20px;
+}
+
+/* Contenedor para el contenido */
+.container4_content {
+  width: 85%;
+  margin: auto;
+  background-image: url('imagenes/fotoblancoynegro.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+/* Estilo para el texto dentro del contenedor */
+.container4_content h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 800px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la visibilidad del texto */
+}
+
+/**/
+/***************+ Contenedor 5 *************************** */
+.container5 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+  text-align: center;
+}
+
+/* Estilo para el título */
+.container5 h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilo para el párrafo */
+.container5 p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+
+.container5_cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+
+  gap: 20px;
+}
+
+
+
+.content_5 img {
+  width: 360px;
+ 
+}
+
+
+
+
+/*Footer*/
+.footer {
+  background-color: var(--color-fondo);
+  padding: 20px;
+}
+.footer p{
+  color: var(--color_fondo-2);
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}

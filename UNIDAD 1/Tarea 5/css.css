@@ -1,0 +1,96 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  background-color: #f0f0f0; /* Fondo suave */
+}
+
+/* Estilos para el contenedor principal */
+.main {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Estilos para el contenedor interno */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilos para la primera columna */
+.cotent1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cotent1 figure {
+  margin: 0;
+}
+
+.cotent1 img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cotent1 .btn {
+  margin-top: 20px;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cotent1 .btn p {
+  margin: 0;
+}
+
+/* Estilos para la segunda columna */
+.cotent2 {
+  flex: 2; /* Hace esta columna más grande */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cotent2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cotent2 span {
+  font-size: 14px;
+  color: #666;
+}
+
+.cotent2 h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.cotent2 p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
